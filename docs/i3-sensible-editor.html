@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 10.2.0" />
+<title>i3: i3-sensible-editor(1)</title>
+<link rel="stylesheet" href="https://i3wm.org/css/style.css" type="text/css" />
+<link rel="stylesheet" href="https://i3wm.org/css/xhtml11.css" type="text/css" />
+<script type="text/javascript">
+/*<![CDATA[*/
+document.addEventListener("DOMContentLoaded", function(){asciidoc.footnotes();}, false);
+/*]]>*/
+</script>
+<script type="text/javascript" src="https://i3wm.org/js/asciidoc-xhtml11.js"></script>
+</head>
+<body class="article">
+
+        <div id="main">
+            <a href="/"><h1 id="title">i3 - improved tiling WM</h1></a>
+                        <ul id="nav">
+                                <li style=" background-color: #FFD000; font-size: 2em;padding: 0.25em;-webkit-border-radius: 0.25em;border: 4px dashed black;color:  #000000;">latest git docs</li>
+                        </ul>
+        <br style="clear: both">
+<div id="content">
+<div id="header">
+<h1>i3-sensible-editor(1)</h1>
+<span id="author">Michael Stapelberg</span><br />
+<span id="email"><tt>&lt;<a href="mailto:michael+i3@stapelberg.de">michael+i3@stapelberg.de</a>&gt;</tt></span><br />
+<span id="revnumber">version 4.1,</span>
+<span id="revdate">November 2011</span>
+</div>
+<div class="sect1">
+<h2 id="_name">NAME</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>i3-sensible-editor - launches $EDITOR with fallbacks</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_synopsis">SYNOPSIS</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>i3-sensible-editor [arguments]</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description">DESCRIPTION</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>i3-sensible-editor is used by i3-nagbar(1) when you click on the edit button.</p></div>
+<div class="paragraph"><p>It tries to start one of the following (in that order):</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+$VISUAL
+</p>
+</li>
+<li>
+<p>
+$EDITOR
+</p>
+</li>
+<li>
+<p>
+nano
+</p>
+</li>
+<li>
+<p>
+nvim
+</p>
+</li>
+<li>
+<p>
+vim
+</p>
+</li>
+<li>
+<p>
+vi
+</p>
+</li>
+<li>
+<p>
+emacs
+</p>
+</li>
+<li>
+<p>
+pico
+</p>
+</li>
+<li>
+<p>
+qe
+</p>
+</li>
+<li>
+<p>
+mg
+</p>
+</li>
+<li>
+<p>
+jed
+</p>
+</li>
+<li>
+<p>
+gedit
+</p>
+</li>
+<li>
+<p>
+mcedit
+</p>
+</li>
+<li>
+<p>
+gvim
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Please don’t complain about the order: If the user has any preference, they will
+have $VISUAL or $EDITOR set.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_see_also">SEE ALSO</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>i3(1)</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_author">AUTHOR</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Michael Stapelberg and contributors</p></div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
+<div id="footer" lang="de">
+© 2009 Michael Stapelberg, <a href="https://i3wm.org/impress.html">Impressum</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 10.2.0" />
+<title>i3: i3-sensible-terminal(1)</title>
+<link rel="stylesheet" href="https://i3wm.org/css/style.css" type="text/css" />
+<link rel="stylesheet" href="https://i3wm.org/css/xhtml11.css" type="text/css" />
+<script type="text/javascript">
+/*<![CDATA[*/
+document.addEventListener("DOMContentLoaded", function(){asciidoc.footnotes();}, false);
+/*]]>*/
+</script>
+<script type="text/javascript" src="https://i3wm.org/js/asciidoc-xhtml11.js"></script>
+</head>
+<body class="article">
+
+        <div id="main">
+            <a href="/"><h1 id="title">i3 - improved tiling WM</h1></a>
+                        <ul id="nav">
+                                <li style=" background-color: #FFD000; font-size: 2em;padding: 0.25em;-webkit-border-radius: 0.25em;border: 4px dashed black;color:  #000000;">latest git docs</li>
+                        </ul>
+        <br style="clear: both">
+<div id="content">
+<div id="header">
+<h1>i3-sensible-terminal(1)</h1>
+<span id="author">Michael Stapelberg</span><br />
+<span id="email"><tt>&lt;<a href="mailto:michael@i3wm.org">michael@i3wm.org</a>&gt;</tt></span><br />
+<span id="revnumber">version 4.2,</span>
+<span id="revdate">August 2012</span>
+</div>
+<div class="sect1">
+<h2 id="_name">NAME</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>i3-sensible-terminal - launches $TERMINAL with fallbacks</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_synopsis">SYNOPSIS</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>i3-sensible-terminal [arguments]</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description">DESCRIPTION</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>i3-sensible-terminal is invoked in the i3 default config to start a terminal.
+This wrapper script is necessary since there is no distribution-independent
+terminal launcher (but for example Debian has x-terminal-emulator).
+Distribution packagers are responsible for shipping this script in a way which
+is appropriate for the distribution.</p></div>
+<div class="paragraph"><p>It tries to start one of the following (in that order):</p></div>
+<div class="ulist"><ul>
+<li>
+<p>
+$TERMINAL (this is a non-standard variable)
+</p>
+</li>
+<li>
+<p>
+x-terminal-emulator (only present on Debian and derivatives)
+</p>
+</li>
+<li>
+<p>
+mate-terminal
+</p>
+</li>
+<li>
+<p>
+gnome-terminal
+</p>
+</li>
+<li>
+<p>
+terminator
+</p>
+</li>
+<li>
+<p>
+xfce4-terminal
+</p>
+</li>
+<li>
+<p>
+urxvt
+</p>
+</li>
+<li>
+<p>
+rxvt
+</p>
+</li>
+<li>
+<p>
+termit
+</p>
+</li>
+<li>
+<p>
+Eterm
+</p>
+</li>
+<li>
+<p>
+aterm
+</p>
+</li>
+<li>
+<p>
+uxterm
+</p>
+</li>
+<li>
+<p>
+xterm
+</p>
+</li>
+<li>
+<p>
+roxterm
+</p>
+</li>
+<li>
+<p>
+termite
+</p>
+</li>
+<li>
+<p>
+lxterminal
+</p>
+</li>
+<li>
+<p>
+terminology
+</p>
+</li>
+<li>
+<p>
+st
+</p>
+</li>
+<li>
+<p>
+qterminal
+</p>
+</li>
+<li>
+<p>
+lilyterm
+</p>
+</li>
+<li>
+<p>
+tilix
+</p>
+</li>
+<li>
+<p>
+terminix
+</p>
+</li>
+<li>
+<p>
+konsole
+</p>
+</li>
+<li>
+<p>
+kitty
+</p>
+</li>
+<li>
+<p>
+guake
+</p>
+</li>
+<li>
+<p>
+tilda
+</p>
+</li>
+<li>
+<p>
+alacritty
+</p>
+</li>
+<li>
+<p>
+hyper
+</p>
+</li>
+</ul></div>
+<div class="paragraph"><p>Please don’t complain about the order: If the user has any preference, they will
+have $TERMINAL set or modified their i3 configuration file.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_see_also">SEE ALSO</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>i3(1)</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_author">AUTHOR</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Michael Stapelberg and contributors</p></div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
+<div id="footer" lang="de">
+© 2009 Michael Stapelberg, <a href="https://i3wm.org/impress.html">Impressum</a>
+</div>
+</body>
+</html>
