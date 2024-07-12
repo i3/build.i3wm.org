@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="generator" content="AsciiDoc 10.2.0" />
+<title>i3: i3-migrate-config-to-v4(1)</title>
+<link rel="stylesheet" href="https://i3wm.org/css/style.css" type="text/css" />
+<link rel="stylesheet" href="https://i3wm.org/css/xhtml11.css" type="text/css" />
+<script type="text/javascript">
+/*<![CDATA[*/
+document.addEventListener("DOMContentLoaded", function(){asciidoc.footnotes();}, false);
+/*]]>*/
+</script>
+<script type="text/javascript" src="https://i3wm.org/js/asciidoc-xhtml11.js"></script>
+</head>
+<body class="article">
+
+        <div id="main">
+            <a href="/"><h1 id="title">i3 - improved tiling WM</h1></a>
+                        <ul id="nav">
+                                <li style=" background-color: #FFD000; font-size: 2em;padding: 0.25em;-webkit-border-radius: 0.25em;border: 4px dashed black;color:  #000000;">latest git docs</li>
+                        </ul>
+        <br style="clear: both">
+<div id="content">
+<div id="header">
+<h1>i3-migrate-config-to-v4(1)</h1>
+<span id="author">Michael Stapelberg</span><br />
+<span id="email"><tt>&lt;<a href="mailto:michael+i3@stapelberg.de">michael+i3@stapelberg.de</a>&gt;</tt></span><br />
+<span id="revnumber">version 4.0,</span>
+<span id="revdate">July 2011</span>
+</div>
+<div class="sect1">
+<h2 id="_name">NAME</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>i3-migrate-config-to-v4 - migrates your i3 config file</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_synopsis">SYNOPSIS</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre><tt>mv ~/.i3/config ~/.i3/old.config
+i3-migrate-config-to-v4 ~/.i3/old.config &gt; ~/.i3/config</tt></pre>
+</div></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_description">DESCRIPTION</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>i3-migrate-config-to-v4 is a Perl script which migrates your old (&lt; version 4)
+configuration files to a version 4 config file. The most significant changes
+are the new commands (see the release notes).</p></div>
+<div class="paragraph"><p>This script will automatically be run by i3 when it detects an old config file.
+Please migrate your config file as soon as possible. We plan to include this
+script in all i3 release until 2012-08-01. Afterwards, old config files will no
+longer be supported.</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_see_also">SEE ALSO</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>i3(1)</p></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_author">AUTHOR</h2>
+<div class="sectionbody">
+<div class="paragraph"><p>Michael Stapelberg and contributors</p></div>
+</div>
+</div>
+</div>
+<div id="footnotes"><hr /></div>
+<div id="footer" lang="de">
+© 2009 Michael Stapelberg, <a href="https://i3wm.org/impress.html">Impressum</a>
+</div>
+</body>
+</html>
